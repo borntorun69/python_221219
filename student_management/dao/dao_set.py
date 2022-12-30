@@ -10,7 +10,7 @@ class DaoSet:
 
 def conn_close(self):
   try:
-    if self.conn != None:
-      self.conn.close()
+    if self.conn != None: self.conn.close()
+    if self.cursor != None: self.cursor.close()
   except Exception as e:
     print(e)
