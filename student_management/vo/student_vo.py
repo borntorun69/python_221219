@@ -1,26 +1,31 @@
 class Student:
 
-  #id
   @property
-  def id(self):   return self.__id
+  def id(self):    return self.__id
+
   @id.setter
-  def set_id(self, id): self.__id = id
+  def id(self, id):    self.__id = id
+
   @id.getter
-  def get_id(self):  return self.__id
-  #name
+  def id(self):    return self.__id
+
   @property
-  def name(self):   return self.__name
+  def name(self):    return self.__name
+
   @name.setter
-  def set_name(self, name): self.__name = name
+  def name(self, name):    self.__name = name
+
   @name.getter
-  def get_name(self):  return self.__name
-  #pw
+  def name(self):    return self.__name
+
   @property
-  def pw(self):   return self.__pw
+  def pw(self):    return self.__pw
+
   @pw.setter
-  def set_pw(self, pw): self.__pw = pw
+  def pw(self, pw):    self.__pw = pw
+
   @pw.getter
-  def get_pw(self):  return self.__pw
+  def pw(self):    return self.__pw
 
   # def __init__(self, id, name, pw):
   #   self.__id = id

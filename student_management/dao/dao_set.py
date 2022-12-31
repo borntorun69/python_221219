@@ -1,16 +1,16 @@
 import sqlite3
 
 class DaoSet:
-  def conn_db(self):
+  def connect(self):
     self.conn = sqlite3.connect(
-      'd:/classPython/workspace/python_221219/db.sqlite'
+      'd:/classPython/workspace/python_221219_2/db.sqlite'
       , isolation_level=None)
     return self.conn
 
+  def disconnect(self):
+    try:
+      if self.conn != None: self.conn.close()
+      if self.cursor != None: self.cursor.close()
+    except Exception as e:
+      print(e)
 
-def conn_close(self):
-  try:
-    if self.conn != None: self.conn.close()
-    if self.cursor != None: self.cursor.close()
-  except Exception as e:
-    print(e)
